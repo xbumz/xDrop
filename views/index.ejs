@@ -1,0 +1,107 @@
+<!doctype html
+   <html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+   <title>xDrop - Upload files, for free </title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="application-name" content="&nbsp;" />
+   <meta name="msapplication-TileColor" content="#FFFFFF" />
+   <link rel="canonical" href="index.html">
+   <link rel="stylesheet" href="/stylesheets/libs/bootstrap.min5c33.css?149425225">
+   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="/stylesheets/libs/animate.min.css">
+   <link rel="stylesheet" href="/stylesheets/styles.css?149425225">
+   <link rel="stylesheet" href="/stylesheets/dropzone5c33.css?149425225" />
+   <link rel="stylesheet" href="/stylesheets/tooltips.css" />
+   <link rel="stylesheet" href="/stylesheets/purple.css">
+   <link rel="stylesheet" href="/stylesheets/responsive.css">
+   <link href="/stylesheets/libs/jquery.growl.css" rel="stylesheet" type="text/css" />
+   <script src="/js/libs/jquery.min5c33.js?149425225"></script>
+   <script src="/js/libs/clipboard.min5c33.js?149425225"></script>
+   <script src="/js/tooltips5c33.js?149425225"></script>
+   <script src="/js/libs/jquery.growl5c33.js?149425225"></script>
+   <script src="/js/libs/dropzone5c33.js?149425225"></script>
+   <script>Dropzone.autoDiscover = false;</script>
+   <script src="/js/libs/bootstrap.min5c33.js?149425225"></script>
+   <script src="/js/main.js?149425225"></script>
+   <script src="/js/libs/jquery.gradientify5c33.js?149425225"></script>
+</head>
+<body class="home">
+     <div class=" wrapper header solid-color">
+      <div class="color-overlay">
+         <div class="container">
+            <div class="only-logo">
+               <div class="">
+                  <div class="navbar-header">
+                     <a title="Upload files for free" href="/">
+                     <img src="/img/logo.png" alt="Upload Files" width="125">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="intro-section">
+                     <h1 id="main-title" class="intro">xDrop!</h1>
+                     <h5 id="second-title" class="intro">Secure, free. Simply Drop your files to share it...</h5>
+                     <div id="uf-uploader">
+                        <form class="ufzone needsclick" id="upload-window">
+                           <div class="dz-message needsclick">
+                              Drop file here or click to upload. (100MB max)<br />
+                           </div>
+                        </form>
+                     </div>
+                     <div id="edit">
+                        <h3>Done! Your file is available at:</h3>
+                        <div class="upload-link-container">
+                           <input onClick='this.select();' id="copylink" class='upload-link' type='text' value='' />
+                           <div class='copy' id="copybutton" title='Copy URL' data-clipboard-target="#copylink" >
+                              <i class="fa fa-clipboard" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                        <div id="share-file">
+                           <h3>Share this file directly</h3>
+                           <a href="javascript:void(0);" title="Copy URL" class='standard-button copybutton copy' data-clipboard-target="#copylink">
+                           <i class="fa fa-clipboard"></i> Copy File URL
+                           </a>
+                        </div>
+                        <a class="btn btn-default btn-lg standard-button upload-button" href="/">
+                        <i class="fa fa-cloud-upload"></i>Upload another file
+                        </a>
+                     </div>
+                     <div class="recent-uploads"></div>
+                     
+                     <div class="stats">
+                        <div class="col-md-6 wow fadeIn animated animated" data-wow-offset="10" data-wow-duration="2s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeIn;">
+                           <h2 id="download-count">-<%= dTime %>-</h2>
+                           <p>Downloads</p>
+                        </div>
+                        <div class="col-md-6 wow fadeIn animated animated" data-wow-offset="10" data-wow-duration="2s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeIn;">
+                           <h2 id="file-count">-<%= uploadTime %>-</h2>
+                           <p>Uploads</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <div class="container">
+         <div class="contact-box wow animated" data-wow-offset="10" data-wow-duration="1.5s">
+            <div class="btn contact-button expand-form expanded">
+               <a href="/"><img width="50" src="/img/logo.png" alt="Drop logo" class="responsive-img"></a>
+            </div>
+         </div>
+         <p class="copyright">
+            ©2019 xDrop, by xBumZ All Rights Reserved.
+         </p>
+      </div>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "xdrop",
+  "version": "1.0.0",
+  "description": "xDrop is a File Uploader, You can Upload any File and share the link...",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbumz/xDrop"
+  },
+  "author": "xbumz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xbumz/xDrop/issues"
+  },
+  "homepage": "https://github.com/xbumz/xDrop#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jest": "^24.5.0",
+    "mime": "^2.4.0",
+    "mime-types": "^2.1.22",
+    "mongoose": "^5.4.20",
+    "multer": "^1.4.1",
+    "nodemon": "^1.18.10",
+    "supertest": "^3.4.2"
+  }
+}
