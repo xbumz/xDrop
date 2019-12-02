@@ -1,11 +1,28 @@
 # xDrop
-xDrop File and sharelink node.js MongoDB
 
-ติดตั้ง MongoDB ให้เรียบร้อย <br>
-ติดตั้ง Node.js 
+Drop file and sharelink with node.js 
+
+## Installation
+
+install node.js 
+install MongoDB
 
 
-npm install <br>
-node app.js 
+```bash
+npm install
+npm start
+```
 
+## Usage
 
+```
+npm start
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
